@@ -10,7 +10,7 @@ var (
 )
 
 func Initialize() {
-	logger = config.NewLogger("router")
+	logger = config.GetLogger("router")
 	router := gin.Default()
 
 	initializeRoutes(router)

@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func InitializeSQLite() (*gorm.DB, error) {
+func initializeSQLite() (*gorm.DB, error) {
 	logger := GetLogger("sqlite")
 	dbPath := "./db/main.db"
 	_, err := os.Stat(dbPath)

@@ -14,7 +14,7 @@ type Logger struct {
 	writer  io.Writer
 }
 
-func NewLogger(p string) *Logger {
+func newLogger(p string) *Logger {
 	writer := io.Writer(os.Stdout)
 	logger := log.New(writer, p, log.Ldate|log.Ltime)
 
